@@ -58,4 +58,31 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.output-cointainer .card {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 16px;
+}
+
+.output-cointainer .card h2 {
+  font-size: 18px;
+}
+
+.output-cointainer .card img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .output-cointainer #output {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
